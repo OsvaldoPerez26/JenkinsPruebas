@@ -6,6 +6,11 @@ pipeline {
         sh 'echo stage 1'
       }
     }
+  stage('Set permissions') {
+        steps {
+          sh 'chmod +x test-script.sh'
+        }
+      }
     stage('stage 2') {
       steps {
         retry(5) {
