@@ -26,9 +26,10 @@ pipeline {
   }
   post {
       success {
-          mail to: 'osvaldo.perez@itw.mx',
-               subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
-               body: "Something is wrong with ${env.BUILD_URL}"
+          //mail to: 'osvaldo.perez@itw.mx',
+               //subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
+               //body: "Something is wrong with ${env.BUILD_URL}"
+          echo 'Pipeline exitoso
       }
   }
 }
