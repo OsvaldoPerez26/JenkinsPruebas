@@ -26,7 +26,7 @@ pipeline {
  stage('Trigger build'){
         steps{
           script{
-              build job: 'Caso-Prueba'
+              build job: 'example-retry/Caso-Prueba'
             }
         }
       }
