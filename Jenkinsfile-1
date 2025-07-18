@@ -24,6 +24,13 @@ pipeline {
       }
     }
   }
+    stage('Trigger build'){
+        steps{
+          script{
+              build job: '#15'
+            }
+        }
+      }
   post {
       failure {
           mail to: 'osvaldo.perez@itw.mx',
