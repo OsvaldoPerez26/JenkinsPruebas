@@ -29,7 +29,7 @@ pipeline {
           //mail to: 'osvaldo.perez@itw.mx',
                //subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
                //body: "Something is wrong with ${env.BUILD_URL}"
-          echo 'Pipeline exitoso
+          echo 'Pipeline exitoso'
       }
   }
 }
